@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+} 
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(108, 41, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.score-board{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(91, 21, 221);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30%;
+}
+
+.elem{
+    display: flex ;
+    align-items: center;
+    gap: 15px;
+}
+
+.elem h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box{
+    color: rgb(91, 21, 221);
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: .5rem 1.2rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.game-board{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(91, 21, 221);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.bubble:hover{
+    background-color: rgb(72, 2, 201);
+    cursor: pointer;
+}
+
+#gameover{
+    font-size: 4rem;
+    color: rgb(72, 2, 201);
+}
