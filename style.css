@@ -6,12 +6,12 @@
 }
 
 html,
-body{
+body {
     width: 100%;
     height: 100%;
-} 
+}
 
-.main{
+.main {
     width: 100%;
     height: 100%;
     background-color: rgb(108, 41, 233);
@@ -20,7 +20,7 @@ body{
     align-items: center;
 }
 
-.panel{
+.panel {
     width: 80%;
     height: 80%;
     background-color: #fff;
@@ -28,7 +28,7 @@ body{
     overflow: hidden;
 }
 
-.score-board{
+.score-board {
     width: 100%;
     height: 100px;
     background-color: rgb(91, 21, 221);
@@ -38,20 +38,20 @@ body{
     padding: 0 30%;
 }
 
-.elem{
-    display: flex ;
+.elem {
+    display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.elem h2{
+.elem h2 {
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
 }
 
-.box{
+.box {
     color: rgb(91, 21, 221);
     font-weight: 600;
     font-size: 1.4rem;
@@ -60,10 +60,10 @@ body{
     border-radius: 5px;
 }
 
-.game-board{
+.game-board {
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     width: 100%;
     height: calc(100% - 100px);
     padding: 20px 30px;
@@ -72,7 +72,7 @@ body{
     flex-wrap: wrap;
 }
 
-.bubble{
+.bubble {
     width: 40px;
     height: 40px;
     background-color: rgb(91, 21, 221);
@@ -85,12 +85,74 @@ body{
     color: #fff;
 }
 
-.bubble:hover{
+.bubble:hover {
     background-color: rgb(72, 2, 201);
     cursor: pointer;
 }
 
-#gameover{
+#gameover {
     font-size: 4rem;
     color: rgb(72, 2, 201);
+}
+
+
+@media (max-width:360px) {
+    .main {
+        height: 100vh;
+    }
+
+    .panel {
+        height: 80%;
+    }
+
+    .elem {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .elem h2 {
+        padding: 0px 10px;
+        font-size: .6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .box {
+        color: rgb(91, 21, 221);
+        font-weight: 600;
+        font-size: .8rem;
+        padding: .4rem .8rem;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .game-board {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(100% - 100px);
+        padding: 5px 3px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+.bubble {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(91, 21, 221);
+    border-radius: 50%;
+    font-size: .7rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+#gameover {
+    font-size: 1rem;
+    color: rgb(72, 2, 201);
+}
 }
